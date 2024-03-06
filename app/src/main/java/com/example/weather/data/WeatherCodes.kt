@@ -62,4 +62,7 @@ enum class WeatherCodes(val code: Int) {
     }
 }
 
+/**
+ * Exception for when a given code does not resolve to a valid WeatherCode.
+ */
 class InvalidWeatherCodeException(message: String) : Exception(message)
